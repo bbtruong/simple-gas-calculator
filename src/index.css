@@ -1,13 +1,113 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box; 
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  margin: 0px;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: linear-gradient(#0f1c31, #5277a1)
+}
+
+.fontChange {
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 500px;
+  margin: auto;
+}
+
+.calculate-button {
+  background: cadetblue;
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 8px 2px;
+  cursor: pointer;
+  border-radius: 6px;
+  width:100%
+
+}
+
+.calculate-button:hover{
+  background:rgb(111, 161, 163);
+}
+
+.calculate-button:active{
+  transform: scale(0.98);
+  background: rgb(72, 118, 119);
+}
+
+.login-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 600px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: rgba(0,0,0,0.5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,0.5);
+  border-radius: 10px;
+  color: white;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 40px;
+  color: white;
+  background: rgba(119, 133, 144, 0.335);
+  border-radius: 10px;
+}
+
+.login-form .form-control {
+  position: relative;
+}
+
+.form-control {
+  margin: 12px 0;
+  border-radius: 10px;
+  padding: 10px 10px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.label {
+  text-align: center;
+}
+
+h2 {
+  margin: 0px;
+  font-size: 15px
+}
+
+h3 {
+  font-size: 85px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.result-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 40px;
+  color: white;
+  background: rgba(119, 133, 144, 0.335);
+  border-radius: 10px;
 }
